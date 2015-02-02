@@ -1,5 +1,9 @@
+package GameState;
+
+import java.awt.*;
+
 /**
- * File: Main.java
+ * File: GameState.java
  * Created by Atlas IND on 2/2/15.
  * [2014] - [2015] Rostiss Development
  * All rights reserved.
@@ -15,9 +19,13 @@
  * from Rostiss Development.
  */
 
-public class Main {
+public abstract class GameState {
 
-    public static void main(String[] args) {
-        System.out.println("Ello m8!");
-    }
+    protected GameStateManager gsm;
+
+    public abstract void init();
+    public abstract void update();
+    public abstract void draw(Graphics2D graphics);
+    public abstract void keyPressed(int k);
+    public abstract void keyReleased(int k);
 }
