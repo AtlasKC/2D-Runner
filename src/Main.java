@@ -14,6 +14,7 @@
  * is strictly forbidden unless prior written permission is obtained
  * from Rostiss Development.
  */
+
 public class Main {
 
     public static void main(String[] args) {
